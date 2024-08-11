@@ -48,6 +48,7 @@ body.menu-open {
   list-style: none;
   font-size: 1.1rem;
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown-menu {

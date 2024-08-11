@@ -1,0 +1,166 @@
+.admin-users {
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+    color: #fff; /* Light text color for better contrast */
+    background-color: #111; /* Dark background for the main container */
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    width: 97%;
+    margin: 0 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .admin-users-table,
+  .user-coupons-table,
+  .user-wishlist-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #222; /* Darker background for tables */
+  }
+
+  .user-orders-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .admin-users-table th,
+  .admin-users-table td,
+  .user-coupons-table th,
+  .user-coupons-table td,
+  .user-wishlist-table th,
+  .user-wishlist-table td {
+    border: 1px solid #333; /* Slightly lighter border color */
+    padding: 8px;
+  }
+  
+  .admin-users-table th,
+  .user-coupons-table th,
+  .user-wishlist-table th {
+    background-color: #333; /* Dark background for headers */
+    color: #ff69b4; /* Hot pink color for header text */
+    text-align: left;
+  }
+  
+  .user-coupons-table,
+  .user-wishlist-table {
+    margin-top: 20px;
+  }
+  
+  .user-details {
+    overflow-x: auto;
+  }
+  .user-details h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  button.dropdown-btn,
+  button.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  button.dropdown-btn {
+    background-color: #ff69b4; /* Hot pink background for dropdown */
+    color: #fff; /* White text */
+  }
+  
+  button.dropdown-btn:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+  }
+  
+  button.delete-btn {
+    background-color: #000; /* Black background for delete */
+    color: #ff69b4; /* Hot pink text */
+  }
+  
+  button.delete-btn:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+
+  .pagination-admin-users {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-btn-admin-users {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff69b4; /* Hot pink background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .pagination-btn-admin-users:disabled {
+    background-color: #ccc; /* Grey background for disabled button */
+    cursor: not-allowed;
+  }
+
+  .search-bar-admin-users {
+
+    margin: 0 auto 1rem auto;
+  }
+  
+  .search-bar-admin-users input {
+    width: 97%;
+    padding: 10px; /* Added some extra padding for better usability */
+    border: 1px solid #444; /* Slightly darker border to match the dark theme */
+    border-radius: 4px;
+    background-color: #222; /* Matching the table background color */
+    color: #fff; /* White text for better contrast */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for a more modern look */
+  }
+
+  .search-bar-admin-users input:focus {
+    outline: none;
+  }
+  
+  .search-bar-admin-users input::placeholder {
+    color: #888; /* Light gray placeholder text for better visibility */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .admin-users-table,
+    .user-coupons-table,
+    .user-wishlist-table {
+      font-size: 14px;
+    }
+  
+    .table-wrapper {
+      display: block;
+    }
+    .search-bar-admin-users input {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .admin-users-action-buttons {
+      display: flex;
+    }
+    .table-wrapper {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-users-table,
+    .user-coupons-table,
+    .user-wishlist-table {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,271 @@
+body.menu-open {
+  overflow: hidden;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-logo-left {
+  margin-left: 1.5rem;
+}
+
+.navbar-logo-left img {
+  width: 250px;
+}
+
+.navbar-menu-middle {
+  display: flex;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid transparent; 
+  padding-bottom: 2px;
+}
+
+.navbar-menu a:hover {
+  color: rgb(95, 92, 92);
+  border-bottom: 1px solid rgb(95, 92, 92);
+}
+
+.navbar-menu li {
+  list-style: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  width: 250px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1001;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid transparent; 
+  padding-bottom: 2px;
+}
+
+.dropdown-menu a:hover {
+  color: rgb(95, 92, 92);
+  border-bottom: 1px solid rgb(95, 92, 92);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+  display: block;
+}
+
+.navbar-user-menu-right {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+
+.navbar-user-menu-right a {
+  color: black;
+}
+
+.navbar-user-menu-right a:hover {
+  color: rgb(78, 75, 75);
+}
+
+.Cart-icon-navbar {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-user-menu-right-sm {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0.5rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-user-menu-right-sm a {
+  color: black;
+}
+
+.navbar-user-menu-right-sm a:hover {
+  color: rgb(78, 75, 75);
+}
+
+.navbar-topheadermodif {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+.navbar-topheadermodif a {
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.mini-nav-announcement {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top:1rem;
+  padding: 0.8rem 0;
+  text-align: center;
+  position: relative;
+  bottom:-45px;
+}
+
+.style-username-icon {
+  cursor: pointer;
+}
+.style-username-icon:hover {
+  color: rgb(78, 75, 75);
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .smallscreen-nav-items {
+    display: none;
+  }
+  .navbar-topheadermodif, .mini-nav-announcement {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .navbar-menu-middle {
+    display: none;
+  }
+  .smmalscreen-hidden{
+    display: none;
+  }
+
+  .navbar-menu-middle.open {
+    display: flex;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 1002;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .close-menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+
+@media screen and (max-width: 510px) {
+  .icons-menu-smallscreen {
+    display: none !important;
+  }
+  .navbar-logo-left img {
+    margin-top: 0.8rem;
+  }
+
+
+ 
+  
+}
+@media screen and (max-width: 768px) {
+
+  .navbar-menu-middle.open {
+
+    top: 60px;
+  
+  }
+
+ 
+  
+}
+
+
+@media screen and (min-width: 510px) {
+  .icons-menu-smallscreen-a {
+    display: none !important;
+  }
+  
+
+  
+}
+@media screen and (max-width: 390px) {
+
+  .navbar-logo-left img {
+    width: 200px;
+  }
+  
+  .navbar-logo-left img {
+    margin-top: 0.6rem;
+  }
+}
+
+

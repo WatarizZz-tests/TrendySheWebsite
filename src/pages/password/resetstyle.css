@@ -1,0 +1,5 @@
+.reset-passwordpage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

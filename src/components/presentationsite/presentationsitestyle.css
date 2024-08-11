@@ -1,0 +1,10 @@
+.presentationsite-container {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.presentationsite-container span {
+    font-weight: bold;
+}

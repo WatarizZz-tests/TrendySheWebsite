@@ -1,0 +1,111 @@
+/* AddProduct.css */
+.add-product-container {
+    max-width: 600px;
+    margin: 2.5rem auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-product-container h1 {
+    text-align: center;
+    color: #444;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .add-product-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-product-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-product-container input[type="text"],
+  .add-product-container input[type="number"],
+  .add-product-container textarea,
+  .add-product-container select,
+  .add-product-container input[type="file"] {
+    margin-bottom: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-product-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .add-product-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .add-product-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-product-container .color-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .add-product-container .color-container input {
+    flex: 1;
+  }
+  
+  .add-product-container .color-container button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-product-container .color-container button:hover {
+    background-color: #218838;
+  }
+  
+  .add-product-container .colors-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .add-product-container .colors-list span {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-product-container .image-previews img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  

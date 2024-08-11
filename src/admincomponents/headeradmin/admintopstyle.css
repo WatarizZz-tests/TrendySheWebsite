@@ -1,0 +1,98 @@
+.admintop-container {
+    width: 100%;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.admintop-left {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.admintop-left span {
+    font-weight: bold;
+}
+
+.admintop-middle img {
+    width: 200px;
+    margin-top: .8rem;
+}
+
+.admintop-right {
+    display: flex;
+    gap: 0.5rem;
+    position: relative; /* Ensures proper positioning of the dropdown */
+}
+
+.menu-icon-container {
+    position: relative; /* Ensures proper positioning of the dropdown */
+}
+
+.dropdown-menu-add-product {
+    position: absolute;
+    top: 100%; /* Position directly below the MenuOpenIcon */
+    right: 0; /* Aligns to the right edge of the MenuOpenIcon */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000; /* Ensures it appears above other content */
+    width: 200px; /* Adjust as needed */
+    padding: 0;
+}
+
+.dropdown-menu-add-product  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu-add-product  li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu-add-product  li:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu-add-product  li:last-child {
+    border-bottom: none;
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .admintop-container {
+    width: 100%;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.admintop-left {
+    display: flex;
+    gap: 0.1rem;
+}
+
+.admintop-left span {
+    font-weight: bold;
+}
+
+.admintop-middle img {
+    width: 160px;
+    margin-top: .3rem;
+}
+
+.admintop-right {
+    display: flex;
+    gap: 0.2rem;
+    position: relative; 
+}
+
+}

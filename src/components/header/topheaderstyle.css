@@ -1,0 +1,47 @@
+.topheader-container {
+    width: 100%;
+    height: 40px;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.topheaderleft {
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+    gap: 0.4rem;
+    
+}
+
+.phone-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    gap: 0.5rem;
+}
+
+.phone-link:hover{
+    color: #b1b6ad;
+  }
+
+.topheadermiddle {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.topheaderright {
+    display: flex;
+    align-items: center;
+    font-size:1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .topheader-container {
+        display: none;
+    }
+    
+}

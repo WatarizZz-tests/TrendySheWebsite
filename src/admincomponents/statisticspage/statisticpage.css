@@ -1,0 +1,128 @@
+/* Existing styles */
+.statistics-container-component {
+    margin-top: 2rem;
+    background-color: #f8d7da; /* Light pink background */
+    padding: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.summary {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.summary-item {
+    margin-bottom: 20px;
+    background-color: #000;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.latest-orders {
+    margin-top: 20px;
+}
+
+.latest-orders h2 {
+    margin-bottom: 10px;
+}
+
+.latest-orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.latest-orders table th, .latest-orders table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.latest-orders .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.chart-controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chart-controls button:hover {
+    background-color: #0056b3;
+}
+
+.chart-controls-button {
+    background-color: rgb(75, 75, 75) !important;
+}
+
+.chart-controls-button:hover {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+
+/* Responsive styles */
+@media (max-width: 920px) {
+    .chart-container {
+        flex-direction: column;
+    }
+    
+    .graph {
+        margin-right: 0;
+        margin-bottom: 20px; /* Space between chart and summary */
+    }
+
+    .summary {
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .summary {
+        padding: 15px;
+    }
+
+    .latest-orders table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .latest-orders table th, .latest-orders table td {
+        vertical-align: top;
+    }
+
+    .latest-orders .pagination {
+      
+        align-items: center;
+    }
+
+    .latest-orders .pagination button {
+        margin-bottom: 5px;
+    }
+}

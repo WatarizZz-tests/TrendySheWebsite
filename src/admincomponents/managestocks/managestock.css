@@ -1,0 +1,140 @@
+.manage-stock-container {
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.manage-stock-search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manage-stock-search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.manage-stock-search input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.manage-stock-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.stock-product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #000;
+    /* Default width for large screens (4 cards per row) */
+    width: calc(25% - 16px); /* Adjusts for 4 cards per row with gap */
+}
+
+.stock-product-card img {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.stock-product-card input {
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.stock-product-card button {
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff69b4; /* Pink */
+    color: #fff;
+    cursor: pointer;
+}
+
+.stock-product-card button:hover {
+    background-color: #ff1493; /* Darker Pink */
+}
+
+.stock-product-card-colors {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-current-quantity {
+    width: 50px;
+}
+
+.stock-product-card-color {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-stock-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.manage-stock-pagination button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: #ff69b4; /* Pink */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.manage-stock-pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.manage-stock-pagination span {
+    line-height: 30px;
+}
+
+
+.stock-management-delete-product-btn {
+    margin-top: 1rem;
+    background-color: black !important;
+}
+
+.stock-management-delete-product-btn:hover {
+    background-color: rgb(65, 62, 62) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .stock-product-card {
+        width: calc(50% - 16px); /* 2 cards per row for mid screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .stock-product-card {
+        width: calc(100% - 16px); /* 1 card per row for small screens */
+    }
+}

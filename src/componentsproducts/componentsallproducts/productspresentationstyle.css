@@ -1,0 +1,118 @@
+.container-NecklacesPresentation {
+    background-color: black;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.necklacespresentation-img {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 1rem; 
+}
+
+.necklacespresentation-img img {
+    height: 300px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    right: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 0.3px solid rgba(71, 70, 70, 0.726);
+}
+
+.necklacespresentation-separation {
+    width: 1px;
+    height: 260px;
+    background-color: rgb(158, 153, 153);
+}
+.necklacespresentation-p {
+    width: 65%;
+    font-size: 1.15rem;
+    letter-spacing: 0.15em;
+    text-align: justify;
+    margin-right: 1.5rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .necklacespresentation-p {
+        width: 65%;
+        font-size: 1.15rem;
+        letter-spacing: 0.15em;
+        text-align:left;
+        margin-right: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width:   670px) {
+
+    .necklacespresentation-p {
+        width: 55%;
+        font-size: 1.05rem;
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (max-width:   570px) {
+
+    .necklacespresentation-p {
+        width: 45%;
+        font-size: 1.05rem;
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (max-width:   530px) {
+
+    .necklacespresentation-p {
+        width: 90%;
+        font-size: 1.05rem;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .container-NecklacesPresentation {
+        flex-direction: column;
+    }
+
+    .necklacespresentation-img {
+        width: 90%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding-right: 1rem; 
+        margin-top: 1rem;
+    }
+    
+    .necklacespresentation-img img {
+        width: 70%;
+        height: 270px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        right: 0;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 0.3px solid rgba(71, 70, 70, 0.726);
+    }
+    
+    .necklacespresentation-separation {
+        width: 260px;
+        height: 1px;
+        background-color: rgb(158, 153, 153);
+    }
+
+    
+    
+}

@@ -1,0 +1,40 @@
+.wishlist-page {
+    width: 65%;
+    padding: 20px;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.wishlist-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px; /* Optional padding to adjust container width */
+    flex-grow: 0;
+}
+
+.wishlist-products p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+@media screen and (max-width: 710px) {
+    .wishlist-page {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .wishlist-page {
+        width: 97%;
+        padding: 0;
+        text-align: center;
+        margin: 1rem auto;
+    }
+}

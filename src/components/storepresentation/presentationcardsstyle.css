@@ -1,0 +1,114 @@
+.presentationcards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.presentationcards-topdiv {
+    width: 80%;
+    display: flex;
+    margin: 4rem auto; 
+    border: 1px solid rgb(208, 204, 204); 
+    height: auto;
+}
+
+.presentationcards-topdiv-left {
+    width: 50%;
+}
+.presentationcards-topdiv-left img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.presentationcards-topdiv-right {
+    width: 50%;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.4), 20px 10px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow with a larger bottom shadow */
+    padding: 1rem; /* Optional padding for text content */
+}
+.presentationcards-topdiv-right p,h4 {
+    margin: 2.5rem 3rem;
+    text-align: right;
+}
+.presentationcards-topdiv-right h4 {
+    font-size: 1.4rem;
+}
+
+.presentationcards-bottomdiv {
+    width: 80%;
+    display: flex;
+    margin: 4rem auto;  
+    flex-direction: row-reverse;
+    height: auto;
+}
+
+.presentationcards-bottomdiv-left {
+    width: 50%;
+    
+}
+.presentationcards-bottomdiv-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.presentationcards-bottomdiv-right {
+    width: 50%;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.4), -20px 10px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow with a larger bottom shadow */
+    padding: 1rem; /* Optional padding for text content */
+}
+
+.presentationcards-bottomdiv-right p,h4 {
+    margin: 2.5rem 3rem;
+    text-align: right;
+}
+
+.presentationcards-bottomdiv-right h4 {
+   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .presentationcards-topdiv {
+        width: 90%;
+        flex-direction: column;
+
+    }
+    
+    .presentationcards-topdiv-left {
+        width: 100%;
+        
+    }
+
+    
+    .presentationcards-topdiv-right {
+        width: 100%;
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.4), 20px 10px 20px rgba(0, 0, 0, 0.15); 
+        padding: 0;
+        
+    }
+ 
+    
+    .presentationcards-bottomdiv {
+        width: 90%;
+        display: flex; 
+        flex-direction: column;
+
+    }
+    
+    .presentationcards-bottomdiv-left {
+        width: 100%;
+        
+    }
+    
+    .presentationcards-bottomdiv-right {
+        width: 100%;
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.4), -20px 10px 20px rgba(0, 0, 0, 0.15);
+        padding: 0; 
+    }
+
+
+    
+    
+    
+}

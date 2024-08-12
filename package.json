@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "chart.js": "^4.4.3",
+    "cloc": "^2.2.0-cloc",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.4",
     "jwt-decode": "^4.0.0",

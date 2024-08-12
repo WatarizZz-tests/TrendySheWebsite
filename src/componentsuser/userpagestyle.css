@@ -130,7 +130,11 @@
 }
     .coupons-table {
         width: 300px;
-        display: block;
+
+}
+.orders-table {
+    width: 100%; 
+    padding: 0 !important;
 }
     
 }
